@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-    <script id="6791d9b4cbfc042dafaf3d16" src="https://dashboard.chatfuel.com/integration/entry-point.js" async defer></script>
+
+
+<script id="6791d9b4cbfc042dafaf3d16" src="https://dashboard.chatfuel.com/integration/entry-point.js" async defer></script>
+
+
 <head>
     <meta charset="utf-8">
     <title>DentiSalud - Clinica Dental</title>
@@ -30,10 +34,19 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        #6791d9b4cbfc042dafaf3d16 {
+          position: fixed; /* Fija el widget en su lugar */
+          left: 0; /* Lo coloca al lado izquierdo */
+          top: 50%; /* Lo coloca al centro verticalmente */
+          transform: translateY(-50%); /* Lo centra verticalmente respecto a la pantalla */
+          z-index: 9999; /* Asegura que el widget esté por encima de otros elementos */
+        }
+      </style>
 </head>
 
 <body>
-    <!-- Spinner Start -->
+        <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-grow text-primary m-1" role="status">
             <span class="sr-only">Loading...</span>
@@ -53,7 +66,7 @@
         <div class="row gx-0">
             <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
                 <div class="d-inline-flex align-items-center">
-                    <small class="py-2"><i class="far fa-clock text-primary me-2"></i>Horarios: Lunes - Viernes : 6.00 am - 10.00 pm, Sabados - Cerrados</small>
+                    <small class="py-2"><i class="far fa-clock text-primary me-2"></i>Horarios: Lunes - Viernes : 6.00 am - 10.00 pm, Sabados - Cerrados </small>
                 </div>
             </div>
             <div class="col-md-6 text-center text-lg-end">
@@ -93,15 +106,16 @@
                     </div>
                 </div>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Archivos</a>
+                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Archivos</a>
                     <div class="dropdown-menu m-0">
                         <a href="audios.html" class="dropdown-item">Audios</a>
                         <a href="videos.html" class="dropdown-item">Videos</a>
                         <a href="chatbot.html" class="dropdown-item">QR-chatbot</a>
+
                     </div>
                 </div>
                 <a href="about.html" class="nav-item nav-link">Acerca de</a>
-                <a href="contact.html" class="nav-item nav-link active">Contactanos</a>
+                <a href="contact.html" class="nav-item nav-link">Contactanos</a>
             </div>
             <button type="button" class="btn text-dark" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></button>
             <a href="appointment.html" class="btn btn-primary py-2 px-4 ms-3">Citas</a>
@@ -128,94 +142,35 @@
     </div>
     <!-- Full Screen Search End -->
 
-
     <!-- Hero Start -->
     <div class="container-fluid bg-primary py-5 hero-header mb-5">
         <div class="row py-3">
             <div class="col-12 text-center">
-                <h1 class="display-3 text-white animated zoomIn">Contactanos</h1>
-                <a href="" class="h4 text-white">Inicio</a>
-                <i class="far fa-circle text-white px-2"></i>
-                <a href="" class="h4 text-white">Contacto</a>
+                <h1 class="display-3 text-white animated zoomIn">CODIGO</h1>
+                <a href="" class="h4 text-white">chat</a>
+                <a href="" class="h4 text-white">--</a>
+                <a href="" class="h4 text-white">ayuda</a>
             </div>
         </div>
     </div>
     <!-- Hero End -->
-
-
-    <!-- Contact Start -->
-    <div class="container-fluid py-5">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-xl-4 col-lg-6 wow slideInUp" data-wow-delay="0.1s">
-                    <div class="bg-light rounded h-100 p-5">
-                        <div class="section-title">
-                            <h5 class="position-relative d-inline-block text-primary text-uppercase">Contactanos</h5>
-                            <h1 class="display-6 mb-4">Siéntete libre de contactarnos</h1>
-                        </div>
-                        <div class="d-flex align-items-center mb-2">
-                            <i class="bi bi-geo-alt fs-1 text-primary me-3"></i>
-                            <div class="text-start">
-                                <h5 class="mb-0">Ubicanos</h5>
-                                <span>Marañon 510, Arequipa</span>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center mb-2">
-                            <i class="bi bi-envelope-open fs-1 text-primary me-3"></i>
-                            <div class="text-start">
-                                <h5 class="mb-0">Nuestro Correo</h5>
-                                <span>DentiSalud@gmail.com</span>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center">
-                            <i class="bi bi-phone-vibrate fs-1 text-primary me-3"></i>
-                            <div class="text-start">
-                                <h5 class="mb-0">Llamanos</h5>
-                                <span>+51 994849566</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 wow slideInUp" data-wow-delay="0.3s">
-                    <form>
-                        <div class="row g-3">
-                            <div class="col-12">
-                                <input type="text" class="form-control border-0 bg-light px-4" placeholder="Su Nombre" style="height: 55px;">
-                            </div>
-                            <div class="col-12">
-                                <input type="email" class="form-control border-0 bg-light px-4" placeholder="Su Email" style="height: 55px;">
-                            </div>
-                            <div class="col-12">
-                                <input type="text" class="form-control border-0 bg-light px-4" placeholder="Razon" style="height: 55px;">
-                            </div>
-                            <div class="col-12">
-                                <textarea class="form-control border-0 bg-light px-4 py-3" rows="5" placeholder="Mensaje"></textarea>
-                            </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" type="submit">Enviar Mensaje</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="col-xl-4 col-lg-12 wow slideInUp" data-wow-delay="0.6s">
-                    <iframe class="position-relative rounded w-100 h-100"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3828.4192639447283!2d-71.56647392494057!3d-16.35259118436872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x914249b90277ccef%3A0x8dc505ecd7331303!2sCONSULTORIO%20DENTAL%20%22AREQUIPA%20%22!5e0!3m2!1ses!2spe!4v1688438461273!5m2!1ses!2spe"
-                        frameborder="0" style="min-height: 400px; border:0;" allowfullscreen="" aria-hidden="false"
-                        tabindex="0"></iframe>
+    <!-- Team Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">QR DESTACADO</h5>
+        <h1 class="mb-0">ESCANEA EL QR PARA ACCEDER AL CHAT BOT</h1>
+            </div>
+            <div style="display: flex; justify-content: center; align-items: center; height: 80vh; width: 82vw; background-color: #f4f4f4;">
+                <div class="rounded-top overflow-hidden" style="width: 300px; text-align: center;">
+                    <img class="img-fluid" src="img/chatbot.jpg" alt="" style="width: 100%; border-radius: 10px;">
                 </div>
             </div>
+
         </div>
     </div>
-    <!-- Contact End -->
-
-</div>
-<div style="display: flex; justify-content: center; align-items: center; height: 26vh; width: 100vw; background-color: #09affc;">
-    <div class="rounded-top overflow-hidden" style="width: 100px; text-align: center;">
-        <img class="img-fluid" src="img/chatbot.jpg" alt="" style="width: 100%; border-radius: 0px;">
-        <a href="" class="h4 text-white">CHATEA</a>
-    </div>
-</div>
-
+    <!-- Team End -->
+ 
     <!-- Newsletter Start -->
     <div class="container-fluid position-relative pt-5 wow fadeInUp" data-wow-delay="0.1s" style="z-index: 1;">
         <div class="container">
@@ -229,10 +184,9 @@
             </div>
         </div>
     </div>
-    <!-- Newsletter End -->
-
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light py-5 wow fadeInUp" data-wow-delay="0.3s" style="margin-top: -75px;">
+    <!-- Newsletter End -->    
+      <!-- Footer Start -->
+      <div class="container-fluid bg-dark text-light py-5 wow fadeInUp" data-wow-delay="0.3s" style="margin-top: -75px;">
         <div class="container pt-5">
             <div class="row g-5      pt-4">
 
